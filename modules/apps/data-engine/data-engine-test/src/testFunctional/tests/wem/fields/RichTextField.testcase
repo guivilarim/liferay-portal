@@ -165,19 +165,6 @@ definition {
 
 	@description = "This is a test for LPS-98076. As a Developer, I want to Implement the HTML field type"
 	@priority = "5"
-	test SetHelpTextOfRichText {
-		DataEngine.editFieldTip(
-			fieldFieldLabel = "Rich Text",
-			fieldHelp = "Help Text");
-
-		DataEngine.viewField(
-			fieldFieldLabel = "Rich Text",
-			fieldHelp = "Help Text",
-			fieldName = "Rich Text");
-	}
-
-	@description = "This is a test for LPS-98076. As a Developer, I want to Implement the HTML field type"
-	@priority = "5"
 	test SetLabelOfRichTextAndHelpText {
 		DataEngine.editFieldLabel(
 			fieldFieldLabel = "Test",
