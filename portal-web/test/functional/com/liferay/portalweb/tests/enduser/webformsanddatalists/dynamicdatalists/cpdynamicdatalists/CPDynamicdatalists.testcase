@@ -1098,10 +1098,17 @@ definition {
 
 		DDLNavigator.gotoListRecords(ddlListName = "List Name");
 
-		DDLRecord.viewFirstFieldCP(
-			ddlRecordFieldData = "Record HTML",
-			field = "HTML",
-			fieldFieldLabel = "HTML");
+		AssertClick(
+			locator1 = "DDL#RECORD_TABLE_COLUMN_ONE_PREVIEW_1",
+			value1 = "(Preview)");
+
+		Click(locator1 = "DDL#RECORD_TABLE_ELLIPSIS_1");
+
+		MenuItem.click(menuItem = "View");
+
+		AssertTextEquals(
+			locator1 = "DDLRecord#FIELD_1",
+			value1 = "HTML Record HTML");
 	}
 
 	@priority = "4"
