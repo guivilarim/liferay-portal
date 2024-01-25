@@ -469,7 +469,7 @@ definition {
 
 		DataEngine.viewField(
 			fieldFieldLabel = "Link to Page",
-			fieldName = "Link to Page");
+			fieldName = "Link to Pageaaaa");
 	}
 
 	@description = "Check if Link to Page Field details can be seen."
